@@ -55,5 +55,5 @@ Clasificación de cada activo según las categorías: **información**, **softwa
 | **Respaldos de bases de datos** | infraestructura | **Accedido:** Robo masivo de información histórica del negocio y usuarios.<br>**Modificado:** Corrupción intencional para evitar la recuperación ante incidentes.<br>**Indisponible:** Incapacidad de restaurar el sistema ante caídas críticas, ataques de Ransomware o desastres. |
 | **Imágenes de contenedores y dependencias** | software | **Accedido:** Descubrimiento de componentes desactualizados y librerías vulnerables.<br>**Modificado:** Inyección de paquetes maliciosos en la cadena de suministro de software.<br>**Indisponible:** Imposibilidad de compilar, escalar o desplegar nuevos contenedores en el entorno. |
 | **Logs y registros de auditoría** | información | **Accedido:** Fuga indirecta de información sensible presente en trazas y headers de peticiones.<br>**Modificado:** Manipulación o borrado de pistas forenses tras un ataque para garantizar impunidad.<br>**Indisponible:** Ceguera operativa; incapacidad para detectar anomalías, auditar intrusiones o depurar fallos. |
-```[cite: 2]
+
 
