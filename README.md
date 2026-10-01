@@ -17,6 +17,8 @@
 11. Respaldos de bases de datos
 12. Imágenes de contenedores y dependencias
 13. Logs y registros de auditoría
+14. Certificados SSL/TLS
+15. Pasarela de pagos externa / API de terceros
 
 ## Clasificación de Activos
 Clasificación de cada activo según las categorías: **información**, **software**, **servicio**, **infraestructura**, **datos**.
@@ -36,6 +38,8 @@ Clasificación de cada activo según las categorías: **información**, **softwa
 | 11 | Respaldos de bases de datos | infraestructura |
 | 12 | Imágenes de contenedores y dependencias | software |
 | 13 | Logs y registros de auditoría | información |
+| 14 | Certificados SSL/TLS | información |
+| 15 | Pasarela de pagos externa / API de terceros | servicio |
 
 ---
 
@@ -55,5 +59,5 @@ Clasificación de cada activo según las categorías: **información**, **softwa
 | **Respaldos de bases de datos** | infraestructura | **Accedido:** Robo masivo de información histórica del negocio y usuarios.<br>**Modificado:** Corrupción intencional para evitar la recuperación ante incidentes.<br>**Indisponible:** Incapacidad de restaurar el sistema ante caídas críticas, ataques de Ransomware o desastres. |
 | **Imágenes de contenedores y dependencias** | software | **Accedido:** Descubrimiento de componentes desactualizados y librerías vulnerables.<br>**Modificado:** Inyección de paquetes maliciosos en la cadena de suministro de software.<br>**Indisponible:** Imposibilidad de compilar, escalar o desplegar nuevos contenedores en el entorno. |
 | **Logs y registros de auditoría** | información | **Accedido:** Fuga indirecta de información sensible presente en trazas y headers de peticiones.<br>**Modificado:** Manipulación o borrado de pistas forenses tras un ataque para garantizar impunidad.<br>**Indisponible:** Ceguera operativa; incapacidad para detectar anomalías, auditar intrusiones o depurar fallos. |
-
-
+| **Certificados SSL/TLS** | información | **Accedido:** Exposición de claves privadas asociadas al certificado, facilitando ataques de escucha o suplantación de identidad (Phishing/MitM).<br>**Modificado:** Invalidación de la confianza del navegador, generando advertencias masivas de seguridad a los usuarios.<br>**Indisponible:** Interrupción de las conexiones cifradas (HTTPS), bloqueando el tráfico seguro de la tienda online. |
+| **Pasarela de pagos externa / API de terceros** | servicio | **Accedido:** Posible compromiso de tokens de integración o claves de API que conectan con procesadores de pago (ej. Stripe/PayPal).<br>**Modificado:** Redirección de los fluxos de cobro hacia cuentas de terceros o alteración de montos procesados externamente.<br>**Indisponible:** Imposibilidad total de procesar transacciones monetarias y finalizar las compras de los clientes. |
